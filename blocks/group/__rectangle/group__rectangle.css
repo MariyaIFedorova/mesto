@@ -1,0 +1,8 @@
+.group__rectangle {
+    transition: 0.5s ease-in;
+}
+
+.group__rectangle:hover {
+    cursor: pointer;
+    opacity: .5;
+}

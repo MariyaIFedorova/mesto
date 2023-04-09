@@ -1,0 +1,19 @@
+.edit-button {
+    all: unset;
+    margin: 9.7% 0 0 3.3%;
+    transition: 0.5s ease-in;
+
+}
+
+.edit-button:hover {
+    cursor: pointer;
+    opacity: .6;
+}
+
+
+@media screen and (min-width:1280px) {
+    .edit-button {
+
+        margin: 14.5% 2% 0 0;
+    }
+}

@@ -1,0 +1,29 @@
+.elements {
+    margin: 10% auto 0;
+    display: grid;
+    width: 88.125%;
+    justify-content: center;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    row-gap: 1.25rem;
+}
+
+@media screen and (min-width:768px) {
+    .elements {
+        width: 93.75%;
+        grid-template-columns: repeat(2, 282px);
+        grid-template-rows: auto;
+        gap: 2rem;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .elements {
+        width: 68.75%;
+        margin: 4.2% auto 0;
+        grid-template-columns: repeat(3, 282px);
+        grid-template-rows: auto;
+        column-gap: 1.0625rem;
+        row-gap: 1.25rem;
+    }
+}

@@ -1,0 +1,29 @@
+.root {
+    min-width: 320px;
+    max-width: 768px;
+    background-color: #000;
+    font-family: 'Inter', Arial, sans-serif;
+    text-rendering: optimizeLegibility;
+}
+
+@media screen and (min-width:768px) {
+    .root {
+        min-width: 768px;
+        max-width: 1024px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .root {
+        min-width: 1024px;
+        max-width: 1280px;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .root {
+        min-width: 1280px;
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+}

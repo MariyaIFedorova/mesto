@@ -1,0 +1,12 @@
+.header__line {
+    margin: 8.5% 0 0;
+    border-bottom: 1px solid #545454;
+    box-sizing: border-box;
+    opacity: .7;
+}
+
+@media screen and (min-width:1280px) {
+    .header__line {
+        margin: 4.1% 0 0;
+    }
+}

@@ -1,0 +1,17 @@
+.add-button__image {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+    border: 2px solid #fff;
+    padding: 17px 132px;
+
+}
+
+@media screen and (min-width:768px) {
+    .add-button__image {
+        max-width: 22px;
+        min-height: 22px;
+        padding: 14px 64px;
+
+    }
+}

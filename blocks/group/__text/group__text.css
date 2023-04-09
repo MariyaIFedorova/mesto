@@ -1,0 +1,11 @@
+.group__text {
+    font-size: 1.5rem;
+    line-height: 1.8125rem;
+    font-weight: 900;
+    padding-top: 25px;
+    padding-bottom: 26px;
+    margin: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}

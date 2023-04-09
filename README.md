@@ -1,17 +1,9 @@
-# Проект: Место
-
-### Обзор
-
-* Figma
-* Картинки
-
-**Figma**
-
-* [Ссылка на макет в Figma](https://www.figma.com/file/2cn9N9jSkmxD84oJik7xL7/JavaScript.-Sprint-4?node-id=0%3A1)
-
-**Картинки**
-
-Доставать картинки предстоит из Фигмы. Это расхожая практика, поэтому полезно потренироваться.
-Не забудьте [оптимизировать картинки](https://tinypng.com/), чтобы ваш сайт загружался быстрее.
-
-Удачи!
+#mesto#
+*Фотоархив красивых мест в России*  
+______________
+Training project to create an html page using Adaptive layout, Grid layout, contains popup for user BIO information.
+*Практическая работа по созданию html страницы, с использованием адаптивной вёрстки через медиазапросы, grid и flex принципов построения, cтилизации через css. Также содержит всплывающее окно для внесения информации о пользователе. Проект структурирован по организационной системе БЭМ Nested*
+[Ссылка на учебный проект] (https://mariyaifedorova.github.io/Travel-in-Russia/)  
+________________
+html5, css, flex, grid, viewport, @media, Java Script. Russian language.
+*Страница на русском языке*

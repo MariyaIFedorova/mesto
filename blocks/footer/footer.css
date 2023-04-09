@@ -1,0 +1,12 @@
+.footer {
+    width: 88.125%;
+    margin: 15% auto 11.25%;
+}
+
+@media screen and (min-width:1024px) {
+    .footer {
+        width: 68.75%;
+        margin: 5.23% auto 4.69%;
+    }
+
+}

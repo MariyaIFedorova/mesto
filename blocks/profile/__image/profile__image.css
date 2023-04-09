@@ -1,0 +1,25 @@
+.profile__image {
+    margin: 13% auto 0;
+    width: 121px;
+    padding-right: 20.625px;
+    padding-left: 20.625px;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 50%;
+}
+
+@media screen and (min-width: 768px) {
+    .profile__image {
+        margin: 4.69% 0 0 2%;
+        object-position: left;
+        padding: 0;
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
+    .profile__image {
+        margin: 4.12% 3.4% 0 0;
+    }
+
+}
