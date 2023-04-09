@@ -3,3 +3,17 @@
     flex-direction: row;
     margin: 0;
 }
+
+@media screen and (min-width:352px) {
+    .info__position {
+
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width:767px) {
+    .info__position {
+
+        margin: 0;
+    }
+}

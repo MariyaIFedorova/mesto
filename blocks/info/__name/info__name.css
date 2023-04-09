@@ -9,11 +9,19 @@
     overflow: hidden;
 }
 
-@media screen and (min-width: 352px) {
+@media screen and (min-width:352px) {
     .info__name {
+
+        margin: 7.5% 0 0 0;
+        min-width: 230px;
+    }
+}
+
+@media screen and (min-width:767px) {
+    .info__name {
+
         margin: 7.5% auto 0;
     }
-
 }
 
 @media screen and (min-width: 1024px) {
