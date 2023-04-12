@@ -1,0 +1,28 @@
+.popup__field_type_job {
+    margin: 0;
+    display: block;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    font-size: 0.875rem;
+    line-height: 1.0625rem;
+    font-weight: 400;
+    color: #000;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    max-width: 238px;
+    min-height: 14px;
+    padding: 0;
+    padding-bottom: 13px;
+    padding-top: 30px;
+    align-self: center;
+    text-align: left;
+
+}
+
+@media screen and (min-width:1024px) {
+    .popup__field_type_job {
+        max-width: 358px;
+    }
+}

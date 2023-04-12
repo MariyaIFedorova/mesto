@@ -12,7 +12,6 @@
     .elements {
         width: 93.75%;
         grid-template-columns: repeat(2, 282px);
-        grid-template-rows: auto;
         gap: 2rem;
     }
 }
@@ -22,7 +21,6 @@
         width: 68.75%;
         margin: 4.2% auto 0;
         grid-template-columns: repeat(3, 282px);
-        grid-template-rows: auto;
         column-gap: 1.0625rem;
         row-gap: 1.25rem;
     }

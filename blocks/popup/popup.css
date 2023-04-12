@@ -5,21 +5,6 @@
     left: 0;
     bottom: 0;
     display: none;
-    padding: 123px 19px 0;
+    justify-content: center;
     background-color: rgba(0, 0, 0, 0.5);
-}
-
-@media screen and (min-width:768px) {
-    .popup {
-        padding: 150px 250px;
-
-    }
-
-}
-
-@media screen and (min-width:1024px) {
-    .popup {
-        padding: 195px 425px;
-    }
-
 }

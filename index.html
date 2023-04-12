@@ -24,84 +24,73 @@
                         <h1 class="info__name">
                             Жак-Ив Кусто
                         </h1>
-                        <button class="edit-button">
-                            <img src="./images/Edit-Button.svg" alt="кнопка редактирования информации"
-                                class="edit-button__image">
-                        </button>
+                        <button class="edit-button" type="button"></button>
                     </div>
                     <p class="info__description">
                         Исследователь океана
                     </p>
                 </div>
-                <button class="add-button">
-                    <img src="./images/ForAddButton.svg" alt="кнопка добавления фотографий" class="add-button__image">
-                </button>
+                <button class="add-button" type="button"></button>
             </section>
             <section class="elements" aria-label="photos">
                 <div class="element">
                     <img src="./images/kirill-pershin-1088404-unsplash.png" class="element__image"
                         alt="загруженная пользователем фотография">
                     <div class="group">
-                        <p class="group__text">
+                        <h2 class="group__text">
                             Карачаевск
-                        </p>
-                        <img class="group__rectangle" src="./images/Like.svg"
-                            alt="значок отмечающий одобрительную оценку изображения">
+                        </h2>
+                        <button type="button" class="group__rectangle"></button>
                     </div>
                 </div>
                 <div class="element">
                     <img src="./images/kirill-pershin-1404681-unsplash.png" class="element__image"
                         alt="загруженная пользователем фотография">
                     <div class="group">
-                        <p class="group__text">
+                        <h2 class="group__text">
                             Гора Эльбрус
-                        </p>
-                        <img class="group__rectangle" src="./images/Like.svg"
-                            alt="значок отмечающий одобрительную оценку изображения">
+                        </h2>
+                        <button type="button" class="group__rectangle"></button>
                     </div>
                 </div>
                 <div class="element">
                     <img src="./images/kirill-pershin-1556355-unsplash.png" class="element__image"
                         alt="загруженная пользователем фотография">
                     <div class="group">
-                        <p class="group__text">
+                        <h2 class="group__text">
                             Домбай
-                        </p>
-                        <img class="group__rectangle" src="./images/Like.svg"
-                            alt="значок отмечающий одобрительную оценку изображения">
+                        </h2>
+                        <button type="button" class="group__rectangle"></button>
                     </div>
                 </div>
                 <div class="element">
                     <img src="./images/kirill-pershin-1404681-unsplash.png" class="element__image"
                         alt="загруженная пользователем фотография">
                     <div class="group">
-                        <p class="group__text">
+                        <h2 class="group__text">
                             Гора Эльбрус
-                        </p>
-                        <img class="group__rectangle" src="./images/Like.svg"
-                            alt="значок отмечающий одобрительную оценку изображения">
+                        </h2>
+                        <button type="button" class="group__rectangle"></button>
                     </div>
                 </div>
                 <div class="element">
                     <img src="./images/kirill-pershin-1556355-unsplash.png" class="element__image"
                         alt="загруженная пользователем фотография">
                     <div class="group">
-                        <p class="group__text">
+                        <h2 class="group__text">
                             Домбай
-                        </p>
-                        <img class="group__rectangle" src="./images/Like.svg"
-                            alt="значок отмечающий одобрительную оценку изображения">
+                        </h2>
+                        <button type="button" class="group__rectangle"></button>
                     </div>
                 </div>
                 <div class="element">
                     <img src="./images/kirill-pershin-1088404-unsplash.png" class="element__image"
                         alt="загруженная пользователем фотография">
                     <div class="group">
-                        <p class="group__text">
+                        <h2 class="group__text">
                             Карачаево-Черкессия
-                        </p>
-                        <img class="group__rectangle" src="./images/Like.svg"
-                            alt="значок отмечающий одобрительную оценку изображения">
+                        </h2>
+                        <button type="button" class="group__rectangle"></button>
                     </div>
                 </div>
             </section>
@@ -112,17 +101,17 @@
                 &#169; 2020 Mesto Russia
             </p>
         </footer>
-    </div>
-    <div class="popup">
-        <div class="popup__container">
-            <div class="popup__close-btn"></div>
-            <div class="popup__content">
-                <h2 class="popup__title">Редактировать профиль</h2>
-                <input type="text" placeholder="Жак-Ив Кусто" class="popup__field popup__field_name">
-                <input type="text" placeholder="Исследователь океана" class="popup__field popup__field_job">
-                <button class="popup__edit-btn" type="submit">
-                    Сохранить
-                </button>
+        <div class="popup">
+            <div class="popup__container">
+                <div class="popup__close-btn"></div>
+                <form class="popup__content" name="userInfo">
+                    <h2 class="popup__title">Редактировать профиль</h2>
+                    <input type="text" class="popup__field popup__field_type popup__field_type_name" name="nameInfo">
+                    <input type="text" class="popup__field popup__field_type popup__field_type_job" name="jobInfo">
+                    <button class="popup__edit-btn" type="submit">
+                        Сохранить
+                    </button>
+                </form>
             </div>
         </div>
     </div>

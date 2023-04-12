@@ -1,25 +1,29 @@
 const openPopupBtn = document.querySelector('.edit-button');
 const popup = document.querySelector('.popup');
 const closePopupBtn = document.querySelector('.popup__close-btn');
-const nameField = popup.querySelector('.popup__field_name');
-const jobField = popup.querySelector('.popup__field_job');
+const nameField = popup.querySelector('.popup__field_type_name');
+const jobField = popup.querySelector('.popup__field_type_job');
 const personName = document.querySelector('.info__name');
 const personJob = document.querySelector('.info__description');
 const saveBtn = popup.querySelector('.popup__edit-btn');
+let formElement = popup.querySelector('.popup__content');
+
 
 function openPopup() {
-    popup.classList.toggle('popup_open');
+    popup.classList.add('popup_open');
+    nameField.value = personName.textContent;
+    jobField.value = personJob.textContent;
+
 }
 
 openPopupBtn.addEventListener('click', openPopup);
-closePopupBtn.addEventListener('click', openPopup);
 
+function closePopup() {
+    popup.classList.remove('popup_open');
+}
 
-personName.value = nameField.textContent;
-personJob.value = jobField.textContent;
+closePopupBtn.addEventListener('click', closePopup);
 
-
-let formElement = popup.querySelector('.popup__content');
 
 function handleFormSubmit(evt) {
 
@@ -27,11 +31,9 @@ function handleFormSubmit(evt) {
 
     personName.textContent = nameField.value;
     personJob.textContent = jobField.value;
+
+    closePopup();
 }
-
-saveBtn.addEventListener('click', handleFormSubmit);
-saveBtn.addEventListener('click', openPopup);
-
 
 formElement.addEventListener('submit', handleFormSubmit);
 

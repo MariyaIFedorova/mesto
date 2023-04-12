@@ -13,7 +13,14 @@
 
 @media screen and (min-width:767px) {
     .info__position {
+        max-width: 280px;
+        margin: 0;
+    }
+}
 
+@media screen and (min-width:1024px) {
+    .info__position {
+        max-width: 500px;
         margin: 0;
     }
 }

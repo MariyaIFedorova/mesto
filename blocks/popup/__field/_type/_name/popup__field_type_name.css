@@ -1,0 +1,29 @@
+.popup__field_type_name {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.0588rem;
+    border: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    align-self: center;
+    color: #000;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    max-width: 238px;
+    min-height: 14px;
+    padding: 0;
+    padding-bottom: 13px;
+
+}
+
+@media screen and (min-width:1024px) {
+    .popup__field_type_name {
+
+        max-width: 358px;
+        min-height: 27px;
+        text-align: left;
+
+    }
+
+}

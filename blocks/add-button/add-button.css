@@ -1,11 +1,17 @@
 .add-button {
     all: unset;
-    display: flex;
-    justify-content: center;
-    align-content: center;
     width: 88.125%;
-    margin: 10% auto 0;
+    max-width: 282px;
+    min-height: 50px;
     transition: 0.5s ease-in;
+    background-image: url(../../images/ForAddButton.svg);
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-position: center;
+    border: 2px solid #fff;
+    margin: 9.5% auto 0;
+    box-sizing: border-box;
+
 }
 
 .add-button:hover {
@@ -14,20 +20,12 @@
 }
 
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
     .add-button {
-        width: 150px;
-        height: 50px;
-        margin: 8.5% 0 0 20%;
-
-    }
-}
-
-@media screen and (min-width:1280px) {
-    .add-button {
-        width: 150px;
-        height: 50px;
-        margin: 8.5% 0 0 22%;
+        max-width: 150px;
+        max-height: 50px;
+        background-size: 22px 22px;
+        margin: 8.5% 0 0;
 
     }
 }
