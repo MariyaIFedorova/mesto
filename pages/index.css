@@ -10,7 +10,6 @@
 @import url(../blocks/info/__position/info__position.css);
 @import url(../blocks/info/__name/info__name.css);
 @import url(../blocks/edit-button/edit-button.css);
-@import url(../blocks/edit-button/__image/edit-button__image.css);
 @import url(../blocks/info/__description/info__description.css);
 @import url(../blocks/add-button/add-button.css);
 @import url(../blocks/elements/elements.css);
@@ -24,8 +23,9 @@
 @import url(../blocks/popup/__close-btn/popup__close-btn.css);
 @import url(../blocks/popup/__content/popup__content.css);
 @import url(../blocks/popup/__title/popup__title.css);
-@import url(../blocks/popup/__field/_type/_name/popup__field_type_name.css);
-@import url(../blocks/popup/__field/_type/_job/popup__field_type_job.css);
+@import url(../blocks/popup/__field/popup__field.css);
+@import url(../blocks/popup/__field/_type/popup__field_type_name.css);
+@import url(../blocks/popup/__field/_type/popup__field_type_job.css);
 @import url(../blocks/popup/__edit-btn/popup__edit-btn.css);
 @import url(../blocks/popup/_open/popup_open.css);
 @import url(../blocks/footer/footer.css);

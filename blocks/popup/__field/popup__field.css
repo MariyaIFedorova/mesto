@@ -1,6 +1,4 @@
-.popup__field_type_job {
-    margin: 0;
-    display: block;
+.popup__field {
     border: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     font-size: 0.875rem;
@@ -15,14 +13,12 @@
     min-height: 14px;
     padding: 0;
     padding-bottom: 13px;
-    padding-top: 30px;
     align-self: center;
-    text-align: left;
 
 }
 
 @media screen and (min-width:1024px) {
-    .popup__field_type_job {
+    .popup__field {
         max-width: 358px;
     }
 }

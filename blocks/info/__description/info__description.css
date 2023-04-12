@@ -7,6 +7,14 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+    max-width: 250px;
+}
+
+@media screen and (min-width: 768px) {
+    .info__description {
+        margin: 3% 0 0 3%;
+        max-width: 300px;
+    }
 }
 
 @media screen and (min-width: 1280px) {

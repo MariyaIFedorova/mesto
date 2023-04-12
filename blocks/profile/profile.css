@@ -1,7 +1,6 @@
 .profile {
     display: flex;
     flex-direction: column;
-    position: relative;
 }
 
 @media screen and (min-width:768px) {
@@ -15,6 +14,13 @@
 @media screen and (min-width:1024px) {
     .profile {
         width: 80%;
+    }
+
+}
+
+@media screen and (min-width:1180px) {
+    .profile {
+        width: 70%;
     }
 
 }

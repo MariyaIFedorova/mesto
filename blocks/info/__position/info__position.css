@@ -21,6 +21,5 @@
 @media screen and (min-width:1024px) {
     .info__position {
         max-width: 500px;
-        margin: 0;
     }
 }

@@ -23,7 +23,6 @@
 @media screen and (min-width:1280px) {
     .root {
         min-width: 1280px;
-        max-width: 1280px;
         margin: 0 auto;
     }
 }

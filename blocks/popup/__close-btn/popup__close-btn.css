@@ -1,11 +1,14 @@
 .popup__close-btn {
     all: unset;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
     width: 20px;
     height: 20px;
     background-size: 100% 100%;
     background-image: url(../../../images/Close\ Icon.svg);
     transition: 0.5s ease-in;
-    align-self: flex-end;
 }
 
 .popup__close-btn:hover {
@@ -21,5 +24,7 @@
     .popup__close-btn {
         width: 32px;
         height: 32px;
+        top: 0;
+        right: 0;
     }
 }
