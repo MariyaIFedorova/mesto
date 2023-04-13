@@ -7,6 +7,7 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+    max-width: 200px;
 }
 
 @media screen and (min-width:352px) {
@@ -14,7 +15,6 @@
 
         margin: 7.5% 0 0 0;
         min-width: 230px;
-        max-width: 250px;
     }
 }
 
