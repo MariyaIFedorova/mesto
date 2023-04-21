@@ -4,7 +4,9 @@
     object-position: center;
     display: block;
     min-width: 282px;
-    max-width: 282px;
+    min-height: 282px;
+    max-height: 282px;
     justify-self: center;
     margin: 0;
+    overflow: hidden;
 }

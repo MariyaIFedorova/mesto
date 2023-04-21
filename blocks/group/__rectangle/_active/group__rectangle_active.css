@@ -1,3 +1,10 @@
 .group__rectangle_active {
-    display: none;
+    all: unset;
+    width: 22px;
+    height: 19px;
+    align-self: center;
+    background-image: url(../../../../images/LikeActive.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }

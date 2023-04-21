@@ -3,5 +3,7 @@
     border-radius: 3%;
     overflow: hidden;
     max-width: 282px;
+    max-height: 361px;
     margin: 0 auto;
+    position: relative;
 }

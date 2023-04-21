@@ -27,75 +27,23 @@
                 </div>
                 <button class="add-button" type="button"></button>
             </section>
-            <section class="elements" aria-label="photos">
-                <div class="element">
-                    <img src="./images/kirill-pershin-1088404-unsplash.png" class="element__image"
-                        alt="загруженная пользователем фотография">
-                    <div class="group">
-                        <h2 class="group__text">
-                            Карачаевск
-                        </h2>
-                        <button type="button" class="group__rectangle"></button>
-                    </div>
-                </div>
-                <div class="element">
-                    <img src="./images/kirill-pershin-1404681-unsplash.png" class="element__image"
-                        alt="загруженная пользователем фотография">
-                    <div class="group">
-                        <h2 class="group__text">
-                            Гора Эльбрус
-                        </h2>
-                        <button type="button" class="group__rectangle"></button>
-                    </div>
-                </div>
-                <div class="element">
-                    <img src="./images/kirill-pershin-1556355-unsplash.png" class="element__image"
-                        alt="загруженная пользователем фотография">
-                    <div class="group">
-                        <h2 class="group__text">
-                            Домбай
-                        </h2>
-                        <button type="button" class="group__rectangle"></button>
-                    </div>
-                </div>
-                <div class="element">
-                    <img src="./images/kirill-pershin-1404681-unsplash.png" class="element__image"
-                        alt="загруженная пользователем фотография">
-                    <div class="group">
-                        <h2 class="group__text">
-                            Гора Эльбрус
-                        </h2>
-                        <button type="button" class="group__rectangle"></button>
-                    </div>
-                </div>
-                <div class="element">
-                    <img src="./images/kirill-pershin-1556355-unsplash.png" class="element__image"
-                        alt="загруженная пользователем фотография">
-                    <div class="group">
-                        <h2 class="group__text">
-                            Домбай
-                        </h2>
-                        <button type="button" class="group__rectangle"></button>
-                    </div>
-                </div>
-                <div class="element">
-                    <img src="./images/kirill-pershin-1088404-unsplash.png" class="element__image"
-                        alt="загруженная пользователем фотография">
-                    <div class="group">
-                        <h2 class="group__text">
-                            Карачаево-Черкессия
-                        </h2>
-                        <button type="button" class="group__rectangle"></button>
-                    </div>
-                </div>
-            </section>
-
+            <section class="elements" aria-label="photos"></section>
         </main>
         <footer class="footer">
             <p class="footer__copyright">
                 &#169; 2020 Mesto Russia
             </p>
         </footer>
+        <template id="cards-template">
+            <div class="element">
+                <button type="button" class="element__delete-btn"></button>
+                <img class="element__image" alt="загруженная пользователем фотография" id="elementPicture">
+                <div class="group">
+                    <h2 class="group__text"></h2>
+                    <button type="button" class="group__rectangle"></button>
+                </div>
+            </div>
+        </template>
         <div class="popup">
             <div class="popup__container">
                 <button class="popup__close-btn" type="button"></button>
@@ -107,6 +55,30 @@
                         Сохранить
                     </button>
                 </form>
+            </div>
+        </div>
+        <div class="add-popup">
+            <div class="add-popup__container">
+                <button class="add-popup__close-btn" type="button"></button>
+                <form class="add-popup__content" name="newPlaceInfo">
+                    <h2 class="add-popup__title">Новое место</h2>
+                    <input type="text" class="add-popup__field add-popup__field_type_place" name="placeInfo"
+                        placeholder="Название">
+                    <input type="text" class="add-popup__field add-popup__field_type_adress" name="placeUrl"
+                        placeholder="Ссылка на картинку">
+                    <button class="add-popup__edit-btn" type="submit">
+                        Создать
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="image-popup">
+            <div class="image-popup__container">
+                <button class="image-popup__close-btn"></button>
+                <figure class="image-popup__content">
+                    <img class="image-popup__picture" alt="всплывающее окно для просмотра фотографии" src="#">
+                    <figcaption class="image-popup__text"></figcaption>
+                </figure>
             </div>
         </div>
     </div>
