@@ -34,6 +34,9 @@ const openPopup = (popupElement) => {
 const closePopup = (popupElement) => {
     popupElement.classList.remove('popup_open');
 };
+const closePopupByBtn = (closeBtn, popupElement) => {
+    closeBtn.addEventListener('click', (event) => { closePopup(popupElement) });
+};
 
 // Редактирование персональных данных о пользователе
 const openEditProfilePopup = () => {
@@ -42,7 +45,7 @@ const openEditProfilePopup = () => {
     openPopup(editProfilePopup);
 };
 editProfilePopupOpenBtn.addEventListener('click', openEditProfilePopup);
-editProfilePopupCloseBtn.addEventListener('click', (event) => { closePopup(editProfilePopup) });
+closePopupByBtn(editProfilePopupCloseBtn, editProfilePopup);
 
 function handleEditProfileFormSubmit(evt) {
     evt.preventDefault();
@@ -60,7 +63,6 @@ const createCardsElement = (card) => {
     const cardTitle = cardElement.querySelector('.group__text');
     const cardDeleteBtn = cardElement.querySelector('.element__delete-btn');
     const cardLikeBtn = cardElement.querySelector('.group__rectangle');
-    const imageLinks = cardElement.querySelectorAll('.element__image');
 
     cardTitle.textContent = card.name;
     cardImage.src = card.link;
@@ -79,14 +81,13 @@ const createCardsElement = (card) => {
     cardLikeBtn.addEventListener('click', markElement);
 
     // Увеличение изображения
-    for (let i = 0; i < imageLinks.length; ++i) {
-        imageLinks[i].addEventListener('click', function (evt) {
-            openPopup(zoomImagePopup);
-            zoomImagePopupPicture.src = imageLinks[i].src;
-            zoomImagePopupTitle.textContent = cardTitle.textContent;
-        });
-    };
-    zoomImagePopupCloseBtn.addEventListener('click', (event) => { closePopup(zoomImagePopup) });
+    cardImage.addEventListener('click', function (evt) {
+        evt.preventDefault();
+        openPopup(zoomImagePopup);
+        zoomImagePopupPicture.src = cardImage.src;
+        zoomImagePopupTitle.textContent = cardTitle.textContent;
+    });
+    closePopupByBtn(zoomImagePopupCloseBtn, zoomImagePopup);
 
     return cardElement;
 };
@@ -97,7 +98,7 @@ initialCards.forEach((userCard) => {
 
 //Добавление новой карточки
 addContentPopupOpenBtn.addEventListener('click', (event) => { openPopup(addContentPopup) });
-addContentPopupCloseBtn.addEventListener('click', (event) => { closePopup(addContentPopup) });
+closePopupByBtn(addContentPopupCloseBtn, addContentPopup);
 const handleAddContentFormSubmit = (evt) => {
     evt.preventDefault();
     const newCard = { name: addContentPlaceField.value, link: addContentAdressField.value };

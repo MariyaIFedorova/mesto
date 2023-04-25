@@ -3,6 +3,7 @@
     position: relative;
     flex-direction: column;
     min-height: 350px;
+    max-width: fit-content;
     margin: 0;
 }
 
