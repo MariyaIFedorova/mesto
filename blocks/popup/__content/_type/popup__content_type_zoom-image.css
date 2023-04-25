@@ -1,0 +1,7 @@
+.popup__content_type_zoom-image {
+    row-gap: 10px;
+    background-color: inherit;
+    max-width: inherit;
+    max-height: inherit;
+    margin: 0;
+}

@@ -1,0 +1,17 @@
+.popup__image {
+    display: block;
+    overflow: hidden;
+    object-fit: cover;
+    max-width: 75vw;
+    max-height: 75vh;
+    margin: 36px 0 0 0;
+    align-self: center;
+    justify-self: center;
+}
+
+@media screen and (min-width:1024px) {
+    .popup__image {
+        margin-top: 48px;
+        margin-right: 32px;
+    }
+}

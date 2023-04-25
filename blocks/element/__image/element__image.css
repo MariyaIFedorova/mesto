@@ -9,4 +9,11 @@
     justify-self: center;
     margin: 0;
     overflow: hidden;
+    transition: 0.3s opacity ease;
+    z-index: 1;
+}
+
+.element__image:hover {
+    cursor: pointer;
+    opacity: 0.8;
 }
