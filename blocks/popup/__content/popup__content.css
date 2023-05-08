@@ -9,7 +9,6 @@
     display: flex;
     flex-direction: column;
     align-self: flex-end;
-    margin-top: 5.677%;
 }
 
 @media screen and (min-width:1024px) {
