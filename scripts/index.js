@@ -20,7 +20,7 @@ const cardsTemplate = document.getElementById('cards-template');
 //Элементы секции увеличения изображения zoomImage
 const zoomImagePopup = document.querySelector('.popup_type_zoom-image');
 const zoomImagePopupPicture = zoomImagePopup.querySelector('.popup__image');
-const zoomImagePopupTitle = zoomImagePopup.querySelector('.popup__title_type_zoom-image');
+const zoomImagePopupTitle = zoomImagePopup.querySelector('.popup__title_type_zoom-image')
 //Элементы для закрытия popup
 const closeBtns = document.querySelectorAll('.popup__close-btn');
 const popups = document.querySelectorAll('.popup');
@@ -31,16 +31,35 @@ const openPopup = (popupElement) => {
 };
 
 //Закрыть popup
-closePopup = () => {
+const closePopup = () => {
     for (let i = 0; i < popups.length; ++i) {
         if (popups[i].classList.contains('popup_open')) {
             popups[i].classList.remove('popup_open')
         }
     }
-};
-for (let i = 0; i < closeBtns.length; ++i) {
-    closeBtns[i].addEventListener('click', closePopup)
-};
+}
+
+const closePopupByBtn = () => {
+    for (let i = 0; i < closeBtns.length; ++i) {
+        closeBtns[i].addEventListener('click', closePopup);
+    }
+}
+closePopupByBtn();
+
+const closePopupByEsc = (evt) => {
+    if (evt.key === 'Escape') {
+        closePopup();
+    }
+}
+document.addEventListener('keydown', closePopupByEsc);
+
+const closeByOverlay = (evt) => {
+    if (evt.target.classList.contains('popup_open') && !evt.target.classList.contains('popup__container')) {
+        closePopup()
+    }
+}
+document.addEventListener('click', closeByOverlay);
+
 
 // Редактирование персональных данных о пользователе
 const openEditProfilePopup = () => {

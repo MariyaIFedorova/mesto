@@ -47,28 +47,38 @@
         <div class="popup popup_type_edit-profile">
             <div class="popup__container popup__container_type_edit-profile">
                 <button class="popup__close-btn popup__close-btn_type_edit-profile" type="button"></button>
-                <form class="popup__content popup__content_type_edit-profile" name="userInfo">
-                    <h2 class="popup__title popup__title_type_edit-profile">Редактировать профиль</h2>
-                    <input type="text" class="popup__field popup__field_type_name" name="nameInfo">
-                    <input type="text" class="popup__field popup__field_type_job" name="jobInfo">
-                    <button class="popup__edit-btn popup__edit-btn_type_edit-profile" type="submit">
-                        Сохранить
-                    </button>
+                <form class="popup__content popup__content_type_edit-profile" name="userInfo" novalidate>
+                    <fieldset class="popup__form-set">
+                        <h2 class="popup__title popup__title_type_edit-profile">Редактировать профиль</h2>
+                        <input type="text" class="popup__field popup__field_type_name" name="nameInfo" required
+                            minlength="2" maxlength="40" id="popup__field_name">
+                        <span class="popup__field_name-error"></span>
+                        <input type="text" class="popup__field popup__field_type_job" name="jobInfo" required
+                            minlength="2" maxlength="200" id="popup__field_job">
+                        <span class="popup__field_job-error"></span>
+                        <button class="popup__edit-btn popup__edit-btn_type_edit-profile" type="submit">
+                            Сохранить
+                        </button>
+                    </fieldset>
                 </form>
             </div>
         </div>
         <div class="popup popup_type_add-content">
             <div class="popup__container popup__container_type_add-content">
                 <button class="popup__close-btn popup__close-btn_type_add-content" type="button"></button>
-                <form class="popup__content popup__content_type_add-content" name="newPlaceInfo">
-                    <h2 class="popup__title popup__title_type_add-content">Новое место</h2>
-                    <input type="text" class="popup__field popup__field_type_place" name="placeInfo"
-                        placeholder="Название">
-                    <input type="text" class="popup__field popup__field_type_adress" name="placeUrl"
-                        placeholder="Ссылка на картинку">
-                    <button class="popup__edit-btn popup__edit-btn_type_add-content" type="submit">
-                        Создать
-                    </button>
+                <form class="popup__content popup__content_type_add-content" name="newPlaceInfo" novalidate>
+                    <fieldset class="popup__form-set">
+                        <h2 class="popup__title popup__title_type_add-content">Новое место</h2>
+                        <input type="text" id="popup__field_place" class="popup__field popup__field_type_place"
+                            name="placeInfo" placeholder="Название" required minlength="2" maxlength="30">
+                        <span class="popup__field_place-error"></span>
+                        <input type="url" id="popup__field_url" class="popup__field popup__field_type_adress"
+                            name="placeUrl" placeholder="Ссылка на картинку" required>
+                        <span class="popup__field_url-error"></span>
+                        <button class="popup__edit-btn popup__edit-btn_type_add-content" type="submit">
+                            Создать
+                        </button>
+                    </fieldset>
                 </form>
             </div>
         </div>
@@ -83,6 +93,7 @@
             </div>
         </div>
     </div>
+    <script src="./scripts/validate.js"></script>
     <script src="./scripts/constants.js"></script>
     <script src="./scripts/index.js"></script>
 </body>
