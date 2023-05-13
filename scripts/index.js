@@ -29,14 +29,12 @@ const popups = document.querySelectorAll('.popup');
 const openPopup = (popupElement) => {
     popupElement.classList.add('popup_open');
     document.addEventListener('keydown', closePopupByEsc);
-    popupElement.addEventListener('click', closeByOverlay);
 };
 
 //Закрыть popup
 const closePopup = (popupElement) => {
     popupElement.classList.remove('popup_open');
     document.removeEventListener('keydown', closePopupByEsc);
-    popupElement.removeEventListener('click', closeByOverlay);
 }
 
 btnsToClosePopup.forEach((btn) => {
@@ -53,10 +51,15 @@ function closePopupByEsc(evt) {
 
 const closeByOverlay = (evt) => {
     if (evt.target.classList.contains('popup_open') && !evt.target.classList.contains('popup__container')) {
-        const popupOpened = document.querySelector('.popup_open');
-        closePopup(popupOpened);
+        popups.forEach(popup => {
+            closePopup(popup)
+        })
     }
 };
+
+popups.forEach(popup => {
+    popup.addEventListener('click', closeByOverlay);
+});
 
 // Редактирование персональных данных о пользователе
 const openEditProfilePopup = () => {
@@ -85,7 +88,7 @@ const createCardsElement = (card) => {
 
     cardTitle.textContent = card.name;
     cardImage.src = card.link;
-    cardImage.alt = 'Фотография загруженная пользователем'
+    cardImage.alt = card.name;
 
     //Удаление карточки
     const deleteCard = () => {
@@ -105,7 +108,7 @@ const createCardsElement = (card) => {
         openPopup(imageZoomPopup);
         imageZoomPopupPicture.src = cardImage.src;
         imageZoomPopupTitle.textContent = cardTitle.textContent;
-        imageZoomPopupPicture.alt = 'Фотография загруженная пользователем';
+        imageZoomPopupPicture.alt = cardTitle.textContent;
     });
 
     return cardElement;
