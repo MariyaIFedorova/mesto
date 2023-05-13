@@ -5,6 +5,7 @@
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
+    align-self: center;
     display: flex;
     flex-direction: column;
     row-gap: 29px;
