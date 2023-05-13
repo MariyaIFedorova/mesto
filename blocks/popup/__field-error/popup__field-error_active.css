@@ -6,7 +6,7 @@
     max-width: 238px;
     width: 83,26%;
     text-align: left;
-    margin: 0 0 0 22px;
+    margin: 0;
    min-height: 22px;
     letter-spacing: 0;
     position: absolute;
@@ -17,6 +17,5 @@
 @media screen and (min-width:1024px) {
     .popup__field-error_active {
         max-width: 358px;
-        margin-left: 36px;
     }
 }
