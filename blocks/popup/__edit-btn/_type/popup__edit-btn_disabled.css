@@ -4,3 +4,12 @@
     background-color: #fff;
     opacity: .2;
 }
+
+.popup__edit-btn_disabled:hover {
+    cursor: auto;
+    opacity: .2;
+}
+
+.popup__edit-btn_disabled:active {
+    opacity: .2;
+}

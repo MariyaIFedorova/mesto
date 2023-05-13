@@ -47,39 +47,47 @@
         <div class="popup popup_type_edit-profile">
             <div class="popup__container popup__container_type_edit-profile">
                 <button class="popup__close-btn popup__close-btn_type_edit-profile" type="button"></button>
-                <form class="popup__content popup__content_type_edit-profile" name="userInfo" novalidate>
-                    <fieldset class="popup__form-set">
-                        <h2 class="popup__title popup__title_type_edit-profile">Редактировать профиль</h2>
-                        <input type="text" class="popup__field popup__field_type_name" name="nameInfo" required
-                            minlength="2" maxlength="40" id="popup__nameInput">
-                        <span class="popup__nameInput-error"></span>
-                        <input type="text" class="popup__field popup__field_type_job" name="jobInfo" required
-                            minlength="2" maxlength="200" id="popup__jobInput">
-                        <span class="popup__jobInput-error"></span>
+                <div class="popup__content popup__content_type_edit-profile">
+                    <h2 class="popup__title popup__title_type_edit-profile">Редактировать профиль</h2>
+                    <form class="popup__form-set" name="userInfo" novalidate>
+                        <div class="popup__form-set_container">
+                            <input type="text" class="popup__field popup__field_type_name" name="nameInfo" required
+                                minlength="2" maxlength="40" id="popup__nameInput">
+                            <span class="popup__nameInput-error"></span>
+                        </div>
+                        <div class="popup__form-set_container">
+                            <input type="text" class="popup__field popup__field_type_job" name="jobInfo" required
+                                minlength="2" maxlength="200" id="popup__jobInput">
+                            <span class="popup__jobInput-error"></span>
+                        </div>
                         <button class="popup__edit-btn popup__edit-btn_type_edit-profile" type="submit">
                             Сохранить
                         </button>
-                    </fieldset>
-                </form>
+                    </form>
+                </div>
             </div>
         </div>
         <div class="popup popup_type_add-content">
             <div class="popup__container popup__container_type_add-content">
                 <button class="popup__close-btn popup__close-btn_type_add-content" type="button"></button>
-                <form class="popup__content popup__content_type_add-content" name="newPlaceInfo" novalidate>
-                    <fieldset class="popup__form-set">
-                        <h2 class="popup__title popup__title_type_add-content">Новое место</h2>
-                        <input type="text" id="popup__placeInput" class="popup__field popup__field_type_place"
-                            name="placeInfo" placeholder="Название" required minlength="2" maxlength="30">
-                        <span class="popup__placeInput-error"></span>
-                        <input type="url" id="popup__urlInput" class="popup__field popup__field_type_adress"
-                            name="placeUrl" placeholder="Ссылка на картинку" required>
-                        <span class="popup__urlInput-error"></span>
+                <div class="popup__content popup__content_type_add-content">
+                    <h2 class="popup__title popup__title_type_add-content">Новое место</h2>
+                    <form class="popup__form-set" name="newPlaceInfo" novalidate>
+                        <div class="popup__form-set_container">
+                            <input type="text" id="popup__placeInput" class="popup__field popup__field_type_place"
+                                name="placeInfo" placeholder="Название" required minlength="2" maxlength="30">
+                            <span class="popup__placeInput-error"></span>
+                        </div>
+                        <div class="popup__form-set_container">
+                            <input type="url" id="popup__urlInput" class="popup__field popup__field_type_adress"
+                                name="placeUrl" placeholder="Ссылка на картинку" required>
+                            <span class="popup__urlInput-error"></span>
+                        </div>
                         <button class="popup__edit-btn popup__edit-btn_type_add-content" type="submit">
                             Создать
                         </button>
-                    </fieldset>
-                </form>
+                    </form>
+                </div>
             </div>
         </div>
         <div class="popup popup_type_zoom-image">
